@@ -19,6 +19,7 @@ This is a basic task manager project in which I used CRUD operation of node js a
 
 <img width="959" alt="Screenshot 2024-09-20 161812" src="https://github.com/user-attachments/assets/5b497fd5-d2bd-42c5-8bae-b38a4b49be60">
 
+<img width="960" alt="Screenshot 2024-09-20 162739" src="https://github.com/user-attachments/assets/3dc72f8e-d8a1-493f-894b-4cee67808ba9">
 
 ## Tech Stack
 

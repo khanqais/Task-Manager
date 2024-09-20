@@ -26,7 +26,8 @@ This is a basic task manager project in which I used CRUD operation of node js a
 Frontend(Folder:public):
 - Html:For structuring the web pages
 - CSS:For styling and responsive design 
-- JavaScript:For dynamic functionality 
+- JavaScript:For dynamic functionality
+  
 backend: 
 - Node js 
 Framework:

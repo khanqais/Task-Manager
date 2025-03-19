@@ -4,12 +4,12 @@ const formDOM = document.querySelector('.task-form')
 const taskInputDOM = document.querySelector('.task-input')
 const formAlertDOM = document.querySelector('.form-alert')
 // Load tasks from /api/tasks
-const showTasks = async () => {
+const showTasks = async () => 
+{
   loadingDOM.style.visibility = 'visible'
-  try {
-    const {
-      data: { tasks },
-    } = await axios.get('/api/v1/tasks')
+  try 
+  {
+    const { data: { tasks },} = await axios.get('/api/v1/tasks')
     if (tasks.length < 1) {
       tasksDOM.innerHTML = '<h5 class="empty-list">No tasks in your list</h5>'
       loadingDOM.style.visibility = 'hidden'
@@ -18,10 +18,8 @@ const showTasks = async () => {
     const allTasks = tasks
       .map((task) => {
         const { completed, _id: taskID, name } = task
-        return `<div class="single-task ${completed && 'task-completed'}">
-<h5><span><i class="far fa-check-circle"></i></span>${name}</h5>
+        return `<div class="single-task ${completed && 'task-completed'}"><h5><span><i class="far fa-check-circle"></i></span>${name}</h5>
 <div class="task-links">
-
 
 
 <!-- edit link -->
@@ -34,10 +32,10 @@ const showTasks = async () => {
 </button>
 </div>
 </div>`
-      })
-      .join('')
-    tasksDOM.innerHTML = allTasks
-  } catch (error) {
+}).join('')
+   tasksDOM.innerHTML = allTasks
+  } 
+  catch (error) {
     tasksDOM.innerHTML =
       '<h5 class="empty-list">There was an error, please try later....</h5>'
   }

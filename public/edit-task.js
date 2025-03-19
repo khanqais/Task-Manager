@@ -60,7 +60,8 @@ editFormDOM.addEventListener('submit', async (e) => {
     formAlertDOM.innerHTML = `error, please try again`
   }
   editBtnDOM.textContent = 'Edit'
-  setTimeout(() => {
+  setTimeout(() =>
+  {
     formAlertDOM.style.display = 'none'
     formAlertDOM.classList.remove('text-success')
   }, 3000)

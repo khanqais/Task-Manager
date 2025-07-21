@@ -13,6 +13,10 @@ app.use(express.json())
 
 app.use('/api/v1/tasks',tasks)
 
+setInterval(() => {
+  axios.get("https://task-manager-q65g.onrender.com/")
+}, 1000 * 60 * 5);
+
 const PORT = process.env.PORT || 5000;
 
 const start=async()=>

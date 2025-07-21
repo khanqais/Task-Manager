@@ -2,10 +2,12 @@ const connectDB=require('./DB/connect')
 const express=require('express')
 const app=express()
 
+
 const cors=require('cors');
 app.use(cors())
 
-const tasks=require('./routes/tasks')
+const tasks=require('./routes/tasks');
+const { default: axios } = require('axios');
 require('dotenv').config();
 
 app.use(express.static('./public'))
